@@ -45,6 +45,13 @@ class ListContacts extends React.Component {
                         value={query}
                         onChange={(e) => this.updateQuery(e.target.value)}
                     />
+                    <a 
+                        href="create"
+                        onClick={() => {
+                            
+                        }}
+                        className='add-contact'
+                        >Add Contact</a>
                 </div>
 
                 {showingContacts.length !== contacts.length && (
